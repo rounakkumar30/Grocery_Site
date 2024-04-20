@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery Store</title>
+
+    <link rel="icon" type="image/icon" href="D:\Website\Grocery\image\basket-shopping-solid.svg">
+    <!-- Code for Font Awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Code for linking css file-->
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <!-- Code for linking css file-->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" / />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header Section-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-shopping-basket"></i>Grocery</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#feature">features</a>
+            <a href="#product">product</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+        </nav>
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here......">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="https://img.freepik.com/premium-photo/watermelon-isolated-white-background_29402-628.jpg?w=740">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">$5.99/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="https://img.freepik.com/free-photo/red-onion-whole-isolated-white_146671-19175.jpg?w=826&t=st=1701608945~exp=1701609545~hmac=ced8a41df6db57e9de12c7b22b3f10f55fad5d38b895ccae8975227b70665793">
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">$5.99/-</span>
+                    <span class="quantity">Qty : 2</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="https://img.freepik.com/free-photo/raw-chicken-meat_1203-6759.jpg?w=740&t=st=1701607446~exp=1701608046~hmac=c29a6825703ed9abcb691d1b4b6cf1e55b912e937cfc8213f81f88aec68438fa">
+                <div class="content">
+                    <h3>Chicken</h3>
+                    <span class="price">5.99/-</span>
+                    <span class="quantity">Qty : 1.5</span>
+                </div>
+            </div>
+            <div class="total">total : $18.97</div>
+            <a href="#" class="btn">Checkout</a>
+
+        </div>
+
+        <form action="#" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>Forgot Your Password <a href="#">Click Here</a></p>
+            <p>Don't Have An Account <a href="#">Create Now</a></p>
+
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+
+    </header>
+    <!--Header Section-->
+
+
+    <!-- Banner Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Best <span>Quality</span> of Product</h3>
+            <p>lkalfoiehioehklfkohaioehklflsdkfiejfjisejfijaijeifja</p>
+            <p>hkjhjfdhlhlkafhlkdfsja</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <!-- Banner Section -->
+
+    <!-- Feature Section -->
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                <h3>Fresh Fruits</h3>
+                <p>hdoafhokadkalkfjkada</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <img src="D:\Website\Grocery\image\40236230_7-aashirvaad-atta-with-multigrains-high-fibre-soft-rotis.webp">
+                <h3>Aata</h3>
+                <p>hdoafhokadkalkfjkada</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="D:\Website\Grocery\image\40236230_7-aashirvaad-atta-with-multigrains-high-fibre-soft-rotis.webp">
+                <h3>Cerels</h3>
+                <p>hdoafhokadkalkfjkada</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                <h3>Fresh Fruits</h3>
+                <p>hdoafhokadkalkfjkada</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section -->
+
+
+    <!-- Our Product Section -->
+    <section class="product" id="product">
+        <h1 class="heading">our <span>products</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <div class="product">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹1000</div>
+                        <a href="#" class="btn add-to-cart-btn" data-name="Fresh Orange" data-price="1000">Add to Cart</a>
+                    </div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh orange</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh orange</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh Apple</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh Mango</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh Guava</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh Kiwi</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh orange</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\beauty-product-collection-set-with-vibrant-colors-generative-ai_188544-9681.avif">
+                    <h1>Fresh orange</h1>
+                    <div class="price">₹1000/- -₹1500</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn">Add to Cart</a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Our Product Section -->
+
+
+
+    <!-- Oor Categories Section -->
+    <section class="categories" id="categories">
+        <h1 class="heading">Product<span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                <h3>Fruits</h3>
+                <p>Upto 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+
+            </div>
+
+            <div class="box">
+                <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                <h3>Vegetables</h3>
+                <p>Upto 35% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+
+            </div>
+
+            <div class="box">
+                <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                <h3>Oil</h3>
+                <p>Upto 15% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+
+            </div>
+
+
+            <div class="box">
+                <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                <h3>cereals</h3>
+                <p>Upto 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Categories Section -->
+
+
+    <!-- Review Area -->
+    <section class="review" id="review">
+        <h1 class="heading">Coustomer<span>Review</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                    <p>ajlfhdhfkhjshfkjafk</p>
+                    <h3>Rounak Kumar</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                    <p>ajlfhdhfkhjshfkjafk</p>
+                    <h3>Vivek Kumar</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                    <p>ajlfhdhfkhjshfkjafk</p>
+                    <h3>Pushar Aashish</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                    <p>ajlfhdhfkhjshfkjafk</p>
+                    <h3>Aditya Singh</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                    <p>ajlfhdhfkhjshfkjafk</p>
+                    <h3>Nisha Kumari</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                    <p>ajlfhdhfkhjshfkjafk</p>
+                    <h3>Shakshi Singh</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="D:\Website\Grocery\image\exotic-delicious-pomegranate-white-background_144627-12571.avif">
+                    <p>ajlfhdhfkhjshfkjafk</p>
+                    <h3></h3>Saurabh Sah
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Area -->
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Grocery<i class="fa fa-shopping-basket"></i></h3>
+                <p>dslakjflk;sjdflkajs;lhfa; lkshfl;ahdnfjhalfhd;lsalsadhlhafe whrlhfoihoiewah nklfhoiehkfchdsaoihoewijnfd
+                </p>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"><i class="fa fa-phone"></i>7903740337</a>
+                <a href="#" class="links"><i class="fa fa-phone"></i>7903740337</a>
+                <a href="#" class="links"><i class="fa fa-envelope"></i>rounakh@gmail.com</a>
+                <a href="#" class="links"><i class="fa fa-map-marker"></i>Hazaaribagh, India</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Features</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Products</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Review</a>
+                <a href="#" class="links"><i class="fa fa-arrow-right"></i>Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>NewsLetter</h3>
+                <p>Subscribe for Latest Updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="submit" value="Subscribe" class="btn">
+
+            </div>
+        </div>
+        <div class="credit">Created By <span>Rounak Kumar</span> | All Rights Reserved</div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer Section -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="test.js"></script>
+
+</body>
+
+</html>
